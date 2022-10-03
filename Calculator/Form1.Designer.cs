@@ -43,7 +43,7 @@
             this.NumSeven = new System.Windows.Forms.Button();
             this.NumNine = new System.Windows.Forms.Button();
             this.DivideButton = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.MultiplyButton = new System.Windows.Forms.Button();
             this.ClearEntryButton = new System.Windows.Forms.Button();
             this.ResetValuesButton = new System.Windows.Forms.Button();
             this.CalcInput = new System.Windows.Forms.TextBox();
@@ -54,6 +54,8 @@
             // 
             // NumZero
             // 
+            this.NumZero.AccessibleDescription = "Number zero button";
+            this.NumZero.AccessibleName = "Number zero button";
             this.NumZero.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.NumZero.Location = new System.Drawing.Point(28, 764);
             this.NumZero.Name = "NumZero";
@@ -76,6 +78,8 @@
             // 
             // DecimalButton
             // 
+            this.DecimalButton.AccessibleDescription = "decimal point";
+            this.DecimalButton.AccessibleName = "decimal point";
             this.DecimalButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.DecimalButton.Location = new System.Drawing.Point(238, 764);
             this.DecimalButton.Name = "DecimalButton";
@@ -217,16 +221,16 @@
             this.DivideButton.UseVisualStyleBackColor = true;
             this.DivideButton.Click += new System.EventHandler(this.operation_Click);
             // 
-            // button3
+            // MultiplyButton
             // 
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button3.Location = new System.Drawing.Point(351, 452);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(96, 119);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "x";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.operation_Click);
+            this.MultiplyButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.MultiplyButton.Location = new System.Drawing.Point(351, 452);
+            this.MultiplyButton.Name = "MultiplyButton";
+            this.MultiplyButton.Size = new System.Drawing.Size(96, 119);
+            this.MultiplyButton.TabIndex = 14;
+            this.MultiplyButton.Text = "x";
+            this.MultiplyButton.UseVisualStyleBackColor = true;
+            this.MultiplyButton.Click += new System.EventHandler(this.operation_Click);
             // 
             // ClearEntryButton
             // 
@@ -305,7 +309,7 @@
             this.Controls.Add(this.ClearEntryButton);
             this.Controls.Add(this.ResetValuesButton);
             this.Controls.Add(this.DivideButton);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.MultiplyButton);
             this.Controls.Add(this.NumEight);
             this.Controls.Add(this.NumSeven);
             this.Controls.Add(this.NumNine);
@@ -344,7 +348,7 @@
         private Button NumSeven;
         private Button NumNine;
         private Button DivideButton;
-        private Button button3;
+        private Button MultiplyButton;
         private Button ClearEntryButton;
         private Button ResetValuesButton;
         private TextBox CalcInput;

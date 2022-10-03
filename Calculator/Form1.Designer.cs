@@ -67,6 +67,8 @@
             // 
             // EqualButton
             // 
+            this.EqualButton.AccessibleDescription = "equal to operation";
+            this.EqualButton.AccessibleName = "equal to operation";
             this.EqualButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.EqualButton.Location = new System.Drawing.Point(464, 616);
             this.EqualButton.Name = "EqualButton";
@@ -91,6 +93,8 @@
             // 
             // button2
             // 
+            this.button2.AccessibleDescription = "addition operation";
+            this.button2.AccessibleName = "addition operation";
             this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button2.Location = new System.Drawing.Point(351, 764);
             this.button2.Name = "button2";
@@ -102,6 +106,8 @@
             // 
             // MinusButton
             // 
+            this.MinusButton.AccessibleDescription = "subtraction operation";
+            this.MinusButton.AccessibleName = "subtraction operation";
             this.MinusButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.MinusButton.Location = new System.Drawing.Point(351, 616);
             this.MinusButton.Name = "MinusButton";
@@ -113,6 +119,8 @@
             // 
             // NumThree
             // 
+            this.NumThree.AccessibleDescription = "Number three button";
+            this.NumThree.AccessibleName = "Number three button";
             this.NumThree.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.NumThree.Location = new System.Drawing.Point(238, 616);
             this.NumThree.Name = "NumThree";
@@ -124,6 +132,8 @@
             // 
             // NumOne
             // 
+            this.NumOne.AccessibleDescription = "Number one button";
+            this.NumOne.AccessibleName = "Number one button";
             this.NumOne.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.NumOne.Location = new System.Drawing.Point(28, 616);
             this.NumOne.Name = "NumOne";
@@ -135,6 +145,8 @@
             // 
             // NumTwo
             // 
+            this.NumTwo.AccessibleDescription = "Number two button";
+            this.NumTwo.AccessibleName = "Number one button";
             this.NumTwo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.NumTwo.Location = new System.Drawing.Point(131, 616);
             this.NumTwo.Name = "NumTwo";
@@ -146,6 +158,8 @@
             // 
             // NumFive
             // 
+            this.NumFive.AccessibleDescription = "Number five button";
+            this.NumFive.AccessibleName = "Number five button";
             this.NumFive.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.NumFive.Location = new System.Drawing.Point(131, 452);
             this.NumFive.Name = "NumFive";
@@ -157,6 +171,8 @@
             // 
             // NumFour
             // 
+            this.NumFour.AccessibleDescription = "Number four button";
+            this.NumFour.AccessibleName = "Number four button";
             this.NumFour.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.NumFour.Location = new System.Drawing.Point(28, 452);
             this.NumFour.Name = "NumFour";
@@ -168,6 +184,8 @@
             // 
             // NumSix
             // 
+            this.NumSix.AccessibleDescription = "Number six button";
+            this.NumSix.AccessibleName = "Number six button";
             this.NumSix.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.NumSix.Location = new System.Drawing.Point(238, 452);
             this.NumSix.Name = "NumSix";
@@ -179,6 +197,8 @@
             // 
             // NumEight
             // 
+            this.NumEight.AccessibleDescription = "Number eight button";
+            this.NumEight.AccessibleName = "Number eight button";
             this.NumEight.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.NumEight.Location = new System.Drawing.Point(131, 294);
             this.NumEight.Name = "NumEight";
@@ -190,6 +210,8 @@
             // 
             // NumSeven
             // 
+            this.NumSeven.AccessibleDescription = "Number seven button";
+            this.NumSeven.AccessibleName = "Number seven button";
             this.NumSeven.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.NumSeven.Location = new System.Drawing.Point(28, 294);
             this.NumSeven.Name = "NumSeven";
@@ -201,6 +223,8 @@
             // 
             // NumNine
             // 
+            this.NumNine.AccessibleDescription = "Number nine button";
+            this.NumNine.AccessibleName = "Number nine button";
             this.NumNine.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.NumNine.Location = new System.Drawing.Point(238, 294);
             this.NumNine.Name = "NumNine";
@@ -212,6 +236,8 @@
             // 
             // DivideButton
             // 
+            this.DivideButton.AccessibleDescription = "division operation";
+            this.DivideButton.AccessibleName = "division operation";
             this.DivideButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.DivideButton.Location = new System.Drawing.Point(351, 294);
             this.DivideButton.Name = "DivideButton";
@@ -223,6 +249,8 @@
             // 
             // MultiplyButton
             // 
+            this.MultiplyButton.AccessibleDescription = "multiply operation";
+            this.MultiplyButton.AccessibleName = "multiply operation";
             this.MultiplyButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.MultiplyButton.Location = new System.Drawing.Point(351, 452);
             this.MultiplyButton.Name = "MultiplyButton";
@@ -234,6 +262,8 @@
             // 
             // ClearEntryButton
             // 
+            this.ClearEntryButton.AccessibleDescription = "clear textbox value";
+            this.ClearEntryButton.AccessibleName = "clear textbox value";
             this.ClearEntryButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ClearEntryButton.Location = new System.Drawing.Point(464, 294);
             this.ClearEntryButton.Name = "ClearEntryButton";
@@ -245,6 +275,8 @@
             // 
             // ResetValuesButton
             // 
+            this.ResetValuesButton.AccessibleDescription = "clear all values";
+            this.ResetValuesButton.AccessibleName = "clear all values";
             this.ResetValuesButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ResetValuesButton.Location = new System.Drawing.Point(464, 452);
             this.ResetValuesButton.Name = "ResetValuesButton";
@@ -256,6 +288,8 @@
             // 
             // CalcInput
             // 
+            this.CalcInput.AccessibleDescription = "number input textbox";
+            this.CalcInput.AccessibleName = "number input form";
             this.CalcInput.Font = new System.Drawing.Font("Courier New", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.CalcInput.Location = new System.Drawing.Point(28, 130);
             this.CalcInput.Multiline = true;
@@ -277,6 +311,8 @@
             // 
             // BinaryButton
             // 
+            this.BinaryButton.AccessibleDescription = "convert decimal to binary";
+            this.BinaryButton.AccessibleName = "convert decimal to binary";
             this.BinaryButton.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BinaryButton.Location = new System.Drawing.Point(464, 720);
             this.BinaryButton.Name = "BinaryButton";
@@ -288,6 +324,8 @@
             // 
             // DecButton
             // 
+            this.DecButton.AccessibleDescription = "convert binary to decimal";
+            this.DecButton.AccessibleName = "convert binary to decimal";
             this.DecButton.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.DecButton.Location = new System.Drawing.Point(464, 810);
             this.DecButton.Name = "DecButton";
@@ -299,6 +337,8 @@
             // 
             // Form1
             // 
+            this.AccessibleDescription = "calculator application";
+            this.AccessibleName = "calculator application";
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(585, 907);

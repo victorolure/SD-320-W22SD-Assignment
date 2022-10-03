@@ -7,6 +7,8 @@ namespace Calculator
         private Double ResultOutput = 0;
         private string OperationApplied = "";
         private bool IsOperationApplied = false;
+        private bool HasErrored = false;
+        private bool ClearOnNextInput = false;
         public Form1()
         {
             InitializeComponent();
@@ -14,7 +16,13 @@ namespace Calculator
 
         private void button_Click(object sender, EventArgs e)
         {
-           
+            if (HasErrored || ClearOnNextInput)
+            {
+                CalcInput.Clear();
+                HasErrored = false;
+                ClearOnNextInput = false;
+            }
+
             if(CalcInput.Text == "0" || IsOperationApplied)
             
                 CalcInput.Clear();
@@ -91,19 +99,61 @@ namespace Calculator
             }
             ResultOutput = Double.Parse(CalcInput.Text);
             CurrentOutput.Text = "";
+            ClearOnNextInput = true;
+            OperationApplied = "";
+            IsOperationApplied = false;
         }
 
         private void DecButton_Click(object sender, EventArgs e)
         {
-            ResultOutput = BinaryToNum(Int32.Parse(CalcInput.Text));
-            CurrentOutput.Text = ResultOutput.ToString();
+            try
+            {
+                if (CalcInput.Text.Any(t => !t.Equals('0') && !t.Equals('1')))
+                {
+                    ThrowError();
+                }
+                else
+                {
+
+                    ResultOutput = BinaryToNum(Int32.Parse(CalcInput.Text));
+                    CalcInput.Text = ResultOutput.ToString();
+                }
+                
+            }
+            catch
+            {
+                HasErrored = true;
+                CalcInput.Text = "Error";
+            }
         }
 
         private void BinaryButton_Click(object sender, EventArgs e)
         {
-            ResultOutput = NumToBinary(Int32.Parse(CalcInput.Text));
-            CurrentOutput.Text = ResultOutput.ToString();
+            char[] binArray = CalcInput.Text.ToCharArray();
+            
+            try
+            {
+                
+                    
+                 ResultOutput = NumToBinary(Int32.Parse(CalcInput.Text));
+                 CalcInput.Text = ResultOutput.ToString();
+                
+                
+            }
+            catch(Exception ex)
+            {
+                ThrowError();
+                
+            }
+            
         }
+
+        private void ThrowError()
+        {
+            HasErrored = true;
+            CalcInput.Text = "ERROR";
+        }
+        
 
         private double BinaryToNum(int binary)
         {
@@ -128,7 +178,7 @@ namespace Calculator
 
         }
 
-        private int NumToBinary(int num)
+        private double NumToBinary(int num)
         {
             StringBuilder sb = new StringBuilder();
             int binaryHolder;
@@ -138,7 +188,7 @@ namespace Calculator
                 sb.Insert(0, binaryHolder);
                 num = num / 2;
             }
-            return Int32.Parse(sb.ToString());
+            return Double.Parse(sb.ToString());
         }
 
     }
